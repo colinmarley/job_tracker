@@ -1,3 +1,6 @@
+# job_tracker
+A small web app to keep track of job applications submitted.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
