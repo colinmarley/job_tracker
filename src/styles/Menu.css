@@ -1,0 +1,49 @@
+.navbar-root {
+    background-color: green;
+    height: 13vh;
+    display: flex;
+  }
+
+.menu-btn {
+    display: block;
+    width: 8vw;
+    height: 13vh;
+}
+
+.menu-btn-line {
+background-color: white;
+display: block;
+position: relative;
+height: 1.5vh;
+width: 4vw;
+left: 2vw;
+border-radius: 0.75vh;
+}
+
+.menu-view {
+    background-color: darkgreen;
+    position: absolute;
+    width: 40vw;
+    height: 87vh;
+    top: 13vh;
+}
+
+.menu-view-active {
+left: 0vw;
+}
+
+.menu-view-inactive {
+left: -40vw;
+}
+
+#menu-btn-top-line {
+margin-top: 3vh;
+}
+
+#menu-btn-mid-line {
+margin-top: 1.25vh;
+}
+
+#menu-btn-bot-line {
+margin-top: 1.25vh;
+}

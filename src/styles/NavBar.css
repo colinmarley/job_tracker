@@ -1,0 +1,15 @@
+.nav-bar-title {
+    display: block;
+    width: 40vw;
+    height: inherit;
+    margin-left: 22vw;
+    color: gold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+.nav-bar-title-text {
+    text-align: center;
+}
