@@ -2,7 +2,7 @@
     background-color: green;
     height: 13vh;
     display: flex;
-  }
+}
 
 .menu-btn {
     display: block;
@@ -11,13 +11,53 @@
 }
 
 .menu-btn-line {
-background-color: white;
-display: block;
-position: relative;
-height: 1.5vh;
-width: 4vw;
-left: 2vw;
-border-radius: 0.75vh;
+    background-color: white;
+    display: block;
+    position: relative;
+    height: 1.5vh;
+    width: 4vw;
+    left: 2vw;
+    border-radius: 0.75vh;
+    -webkit-transition-property: all;
+    -webkit-transition-delay: 2s;
+    -webkit-transition: 0.5s;
+    transition-property: all;
+    transition-delay: 2s;
+    transition: 0.5s;
+}
+
+.menu-btn-top-line-active {
+    left: 30vw;
+    margin-top: 5.75vh;
+    transform: rotate(45deg);
+}
+
+.menu-btn-top-line-inactive {
+    left: 2vw;
+    margin-top: 3vh;
+    transform: rotate(0deg);
+}
+
+.menu-btn-mid-line-active {
+    left: -20vw;
+    margin-top: 0vh;
+}
+
+.menu-btn-mid-line-inactive {
+    left: 2vw;
+    margin-top: 1.5vh;
+}
+
+.menu-btn-bot-line-active {
+    left: 30vw;
+    margin-top: -2.75vh;
+    transform: rotate(135deg);
+}
+
+.menu-btn-bot-line-inactive {
+    left: 2vw;
+    margin-top: 1.25vh;
+    transform: rotate(0deg);
 }
 
 .menu-view {
@@ -29,21 +69,27 @@ border-radius: 0.75vh;
 }
 
 .menu-view-active {
-left: 0vw;
+    left: 0vw;
 }
 
 .menu-view-inactive {
-left: -40vw;
+    left: -40vw;
 }
 
-#menu-btn-top-line {
-margin-top: 3vh;
+@keyframes Menu-btn-activate {
+    from {
+        transform: 
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-#menu-btn-mid-line {
-margin-top: 1.25vh;
-}
-
-#menu-btn-bot-line {
-margin-top: 1.25vh;
+@keyframes Menu-btn-deactivate {
+    from {
+        left: -20vw;
+    }
+    to {
+        left: 2vw;
+    }
 }

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import MenuButtonView from '../pres/MenuButtonView';
 import MenuView from '../pres/MenuView';
 
-
-
 class MenuButton extends Component {
     constructor(props){
         super(props);
@@ -24,7 +22,7 @@ class MenuButton extends Component {
     render() {
         return(
             <div className="menu-btn" id="menuButton" onClick={ (e) => this.onMenuBtnClick(e) }>
-                <MenuButtonView></MenuButtonView>
+                <MenuButtonView menuStatus={this.state.menuStatus}></MenuButtonView>
                 <MenuView menuStatus={this.state.menuStatus}></MenuView>
             </div>
         );
