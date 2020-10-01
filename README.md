@@ -3,6 +3,11 @@ A small web app to keep track of job applications submitted.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Branches
+`master`: We will push all major changes to master after be applied and tested in develop first
+
+`develop`: This branch will be used to test new additions to the project before being updated to master.
+
 ## Available Scripts
 
 In the project directory, you can run:
