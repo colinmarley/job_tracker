@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import MenuButton from './MenuButton';
 import NavBarTitleView from '../pres/NavBarTitleView';
 
+const mapStateToProps = (state, ownProps) => {
+    return ({
 
+    });
+}
+
+const mapDispatchToProps = dispatch => ({
+
+});
 
 class Navbar extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {}
-    }
 
     render() {
         return (
@@ -21,4 +25,7 @@ class Navbar extends Component {
     }
 }
 
-export default Navbar;
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Navbar);

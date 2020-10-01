@@ -15,7 +15,7 @@
     display: block;
     position: relative;
     height: 1.5vh;
-    width: 4vw;
+    width: 50px;
     left: 2vw;
     border-radius: 0.75vh;
     -webkit-transition-property: all;
@@ -60,6 +60,7 @@
     transform: rotate(0deg);
 }
 
+/* MenuView stylings */
 .menu-view {
     background-color: darkgreen;
     position: absolute;
@@ -68,28 +69,17 @@
     top: 13vh;
 }
 
+/* Position of menu when open (active)*/
 .menu-view-active {
     left: 0vw;
 }
 
+/* Position of menu when closed (inactive)*/
 .menu-view-inactive {
     left: -40vw;
 }
 
-@keyframes Menu-btn-activate {
-    from {
-        transform: 
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+/* MenuTabView stylings */
+.menu-tab-element {
 
-@keyframes Menu-btn-deactivate {
-    from {
-        left: -20vw;
-    }
-    to {
-        left: 2vw;
-    }
 }
