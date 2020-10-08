@@ -1,3 +1,9 @@
+.navbar-root {
+    background-color: green;
+    height: 13vh;
+    display: flex;
+}
+
 .nav-bar-title {
     display: block;
     width: 40vw;

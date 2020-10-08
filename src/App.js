@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from './components/func/Navbar';
 import JobForm from './components/func/JobForm';
+import JobFormList from './components/func/JobFormList';
 import { connect } from 'react-redux';
-import firebase from 'firebase';
 import './styles/App.css';
 import './styles/Menu.css';
 import './styles/NavBar.css';
@@ -25,6 +25,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <JobForm></JobForm>
+      <JobFormList></JobFormList>
     </div>
   );
 }

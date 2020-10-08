@@ -1,15 +1,27 @@
-.navbar-root {
-    background-color: green;
-    height: 13vh;
-    display: flex;
-}
 
+/* Menu Button Clickable area */
 .menu-btn {
     display: block;
+    position: relative;
     width: 8vw;
     height: 13vh;
+    -webkit-transition-property: all;
+    -webkit-transition-delay: 2s;
+    -webkit-transition: 0.5s;
+    transition-property: all;
+    transition-delay: 2s;
+    transition: 0.5s;
 }
 
+.menu-btn-active {
+    left: 30vw;
+}
+
+.menu-btn-inactive {
+    left: 0vw;
+}
+
+/* Menu Button Lines */
 .menu-btn-line {
     background-color: white;
     display: block;
@@ -27,19 +39,17 @@
 }
 
 .menu-btn-top-line-active {
-    left: 30vw;
     margin-top: 5.75vh;
     transform: rotate(45deg);
 }
 
 .menu-btn-top-line-inactive {
-    left: 2vw;
     margin-top: 3vh;
     transform: rotate(0deg);
 }
 
 .menu-btn-mid-line-active {
-    left: -20vw;
+    left: -50vw;
     margin-top: 0vh;
 }
 
@@ -49,13 +59,11 @@
 }
 
 .menu-btn-bot-line-active {
-    left: 30vw;
     margin-top: -2.75vh;
     transform: rotate(135deg);
 }
 
 .menu-btn-bot-line-inactive {
-    left: 2vw;
     margin-top: 1.25vh;
     transform: rotate(0deg);
 }

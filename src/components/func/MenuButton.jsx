@@ -21,15 +21,18 @@ class MenuButton extends Component {
 
 
     onMenuBtnClick(event) {
+        //Open or Close the menu
         (this.props.menuState) ? this.props.closeMenu() : this.props.openMenu();
-        console.log("button clicked");
     }
 
     render() {
+
+        let CLASS_NAME = "menu-btn ";
+        CLASS_NAME += (this.props.menuState) ? "menu-btn-active" : "menu-btn-inactive";
+        console.log(CLASS_NAME);
         return(
-            <div className="menu-btn" id="menuButton" onClick={ (e) => this.onMenuBtnClick(e) }>
+            <div className={ CLASS_NAME } id="menuButton" onClick={ (e) => this.onMenuBtnClick(e) }>
                 <MenuButtonView menuState={this.props.menuState}></MenuButtonView>
-                <MenuView></MenuView>
             </div>
         );
     }
